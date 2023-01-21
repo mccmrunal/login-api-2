@@ -4,17 +4,28 @@ run "npm test" on root folder to run tests
 
 
 Directory Structure 
+
 •src/: The root directory for the application, contains all the subdirectories for routes, controllers, middlewares, models, and tests.
+
 •src/routes/: Contains the login route file, responsible for handling the login request and calling the login controller.
+
 •src/controllers/: Contains the login controller file, responsible for handling the login logic. 
+
 •src/middlewares/: Contains the validation middleware file, responsible for validating the request body before calling the login controller.
+
 •src/tests/: Contains the login test file, responsible for testing the login route, login controller and validation middleware.
+
 •src/app.js: The entry point for the application, responsible for starting the server and setting up the middleware and routes.
 
+
 Endpoint
+
 •	POST /login: This endpoint is responsible for handling login requests.
+
 •	Request Body 
+
 o	`username`: (required) The username of the user trying to login.
+
 o	 `password`: (required) The password of the user trying to login.
 
 •	Response
