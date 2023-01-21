@@ -29,25 +29,42 @@ o	`username`: (required) The username of the user trying to login.
 o	 `password`: (required) The password of the user trying to login.
 
 •	Response
+
 •	200 OK:
+
 	 Content-Type: application/json
+
 	 { " message ": "Successfully logged in" }
+
 •	401 Unauthorized:
+
 o	 Content-Type: application/json
+
 o	 { "message": "Invalid username or password" }
+
 •	422 Unprocessable Entity:
+
 o	 Content-Type: application/json
+
 o	 { "errors": [{"msg": "Username is required" }, {"msg": "Password is required"}] }
 
 
+
 Errors 
+
 401 Unauthorized: Returned when the provided credentials are incorrect 
+
 422 Unprocessable Entities: Returned when the request body is missing required fields
 
-Testing 
+
+Testing
+
 •	API has been tested using Jest and Chai.
+
 •	To run the test cases, use the command “ npm test” or “npm run test “ 
+
 •	Test cases for the login route, login controller and validation middleware can be found in src/tests/login.test.js
+
 
 
 
