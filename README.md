@@ -3,6 +3,7 @@ Navigate to src folder and run "node app" to run the server
 run "npm test" on root folder to run tests
 
 Below attached are some screenshots for "login" endpoint.
+
 Sucessfull Request
 ![image](https://user-images.githubusercontent.com/47515609/213874557-ff47fda3-cace-4f39-8fe1-8b3d105e9751.png)
 Invalid Request
